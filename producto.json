@@ -1,0 +1,12 @@
+{
+  "nombre": "Auriculares Bluetooth",
+  "marca": "SoundWave",
+  "precio": 59.99,
+  "color": "Negro",
+  "autonomia": "30 horas",
+  "cancelacionRuido": true,
+  "conectividad": [
+    "Bluetooth 5.3",
+    "USB-C"
+  ]
+}

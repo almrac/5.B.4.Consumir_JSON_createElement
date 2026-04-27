@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica del documento HTML. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5.B.4 - Consumir JSON con createElement</title>
+
+  <!-- Hoja de estilos externa del ejercicio. -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Contenedor principal de toda la práctica. -->
+  <main>
+    <!-- Título principal del ejercicio. -->
+    <h1>04. Producto JSON con createElement</h1>
+
+    <!-- Bloque introductorio que resume el objetivo del ejercicio. -->
+    <div class="intro">
+      <span class="intro-etiqueta">Enunciado</span>
+      <p>Consumir un archivo <strong>JSON</strong> con <strong>fetch</strong> y construir con <strong>createElement</strong> una <strong>lista ordenada</strong> con las propiedades de un producto.</p>
+    </div>
+
+    <!-- Zona intermedia que agrupa el contenido que se va a rellenar con JavaScript. -->
+    <div class="paneles">
+      <div class="bloque-conversion">
+        <!-- Título secundario de la ficha de datos. -->
+        <h2>Ficha del producto</h2>
+
+        <!--
+          Este párrafo sirve para mostrar mensajes al usuario.
+          JavaScript lo actualiza para indicar si el JSON se está cargando,
+          si se ha leído correctamente o si ha ocurrido algún error.
+        -->
+        <p id="mensaje" class="estado" aria-live="polite">Cargando datos del archivo JSON...</p>
+
+        <!--
+          Esta sección actúa como tarjeta visual del producto.
+          Su contenido será completado dinámicamente desde main.js.
+        -->
+        <section class="tarjeta-producto">
+          <!-- Aquí se insertará el nombre del producto leído del JSON. -->
+          <h3 id="nombre-producto">Cargando producto...</h3>
+
+          <!--
+            Lista ordenada vacía al cargar la página.
+            JavaScript creará sus elementos <li> con createElement().
+          -->
+          <ol id="lista-propiedades"></ol>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Archivo JavaScript que realiza el fetch y construye la lista. -->
+  <script src="main.js"></script>
+</body>
+</html>
